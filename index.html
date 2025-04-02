@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2 DNC</title>
+    <title>The Dev News</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <section>
-            <div id="presentation-container"> 
-                <h1>The Dev News</h1>
-            </div>
+    <div class="grid-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>The Dev News</h1>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <p>opinião</p>
+            <h2>Como é ser um desenvolvedor</h2>
+            <p><b>By</b> Fabio Tetsuo</p>
         </section>
 
-        <section id="container">
-            <div id="presentation">
-                <p>opinião</p>
-                <h2>Como é ser um desenvolvedor</h2>
-                <p> <b>By</b> Fabio Tetsuo</p>
-            </div> 
-
-            <div id="title-section">
-                <h3>Posts populares</h3>
-
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Posts Populares -->
+            <div class="popular-posts">
+                <div class="sidebar-header">
+                    <h3>Posts populares</h3>
+                </div>
+                
                 <div class="popular-post">
                     <img src="./assets/image2.svg" alt="">
                     <div>
@@ -51,77 +55,74 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
+            <!-- Categorias -->
+            <div class="categories">
+                <div class="categories-header">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="categories-list">
+                    <ul>
+                        <li>> saude (1)</li>
+                        <li>> desenvolvimento (2)</li>
+                        <li>> produtividade (2)</li>
+                        <li>> opiniao (1)</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
 
-            <div class="presentation-2"> 
-                <div id="card-presentation">
+        <!-- Posts mais recentes -->
+        <section class="recent-posts">
+            <div class="recent-header">
                 <h3>Posts mais recentes</h3>
-                <p><u>Ver todos</u></p>                
-            </div> 
-            <div id="card-presentation-2" >
-                <h3> Categorias</h3>                
-            </div> 
+                <p>Ver todos</p>
+            </div>
             
-            </div>
-            <div id="card-presentation-ul">
-                <ul>
-                    <li> > saude         (1)</li>
-                    <li>  > desenvolvimento       (2)</li>
-                    <li> > produtividade      (2)</li>
-                    <li> > opiniao           (1)</li>
-                </ul>
-            </div>
-            <div id="card-container">
+            <div class="cards-grid">
                 <div class="card">
                     <img src="./assets/card1.svg" alt="">
                     <div class="card-content">
                         <p class="card-category">desenvolvimento</p>
                         <h2 class="card-title">Desenvolvimento mobile</h2>
                         <p class="card-author">By Fabio Tetsuo</p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur...</p>
                     </div>
                 </div>
-            
                 <div class="card">
                     <img src="./assets/card2.svg" alt="">
                     <div class="card-content">
                         <p class="card-category">desenvolvimento</p>
-                        <h2 class="card-title">Desenvolvimento mobile</h2>
+                        <h2 class="card-title">Balancear vida profissional e pessoal</h2>
                         <p class="card-author">By Fabio Tetsuo</p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur...</p>
                     </div>
                 </div>
-            
                 <div class="card">
                     <img src="./assets/card3.svg" alt="">
                     <div class="card-content">
                         <p class="card-category">desenvolvimento</p>
-                        <h2 class="card-title">Desenvolvimento mobile</h2>
+                        <h2 class="card-title">Configurando VSCode</h2>
                         <p class="card-author">By Fabio Tetsuo</p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur...</p>
                     </div>
                 </div>
-            
                 <div class="card">
                     <img src="./assets/card4.svg" alt="">
                     <div class="card-content">
                         <p class="card-category">desenvolvimento</p>
-                        <h2 class="card-title">Desenvolvimento mobile</h2>
+                        <h2 class="card-title">2 monitores ou 1 ultrawide?</h2>
                         <p class="card-author">By Fabio Tetsuo</p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur...</p>
                     </div>
                 </div>
-            </div>          
-            
-                     
-        </section>
-        <section>
-            <div id="copyright"> 
-                <h1>Copyright@The Dev News</h1>
             </div>
         </section>
-    </main>    
+
+        <!-- Footer -->
+        <footer class="footer">
+            <h1>Copyright@The Dev News</h1>
+        </footer>
+    </div>
 </body>
 </html>
